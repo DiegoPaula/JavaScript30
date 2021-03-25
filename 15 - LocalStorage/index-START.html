@@ -22,15 +22,11 @@
     <form class="add-items">
       <input type="text" name="item" placeholder="Item Name" required>
       <input type="submit" value="+ Add Item">
-      <input type="submit" value="Clear All" class="clearAll">
-      <input type="submit" value="Check All" class="checkAll">
-      <input type="submit" value="Uncheck All" class="uncheckAll">
     </form>
   </div>
 
 <script>
   const addItems = document.querySelector('.add-items');
-
   const itemsList = document.querySelector('.plates');
   const items = JSON.parse(localStorage.getItem('items')) || [];
 
